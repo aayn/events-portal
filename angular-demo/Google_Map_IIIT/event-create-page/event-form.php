@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	$str = $str."]";
 
 	//echo $str;
-	$fpointer = fopen("event_data.js",'w') or die("File didnt open");
+	$fpointer = fopen("/var/www/html/angular-demo/objectfiles/object.js",'w') or die("File didnt open");
 	
 	fwrite($fpointer, $str);
 	mysql_close($conn);
